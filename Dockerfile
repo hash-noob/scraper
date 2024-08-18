@@ -9,7 +9,7 @@ RUN echo $(python3 -m site --user-base)
 
 # Copy and install Python dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Set the PATH environment variable to include the user base's binary directory
 ENV PATH /root/.local/bin:${PATH}
