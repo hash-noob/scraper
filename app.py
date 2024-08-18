@@ -12,13 +12,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 app = Flask(__name__)
 
-class event:
-    def __init__(self,title,time,duration,starts_in,url):
-        self.title = title
-        self.time = time
-        self.duration = duration
-        self.starts_in = starts_in
-        self.url = url
 
 @app.route("/")
 def upcomingContest():
